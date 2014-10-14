@@ -2,5 +2,6 @@
 if [ ! -e /var/tmp/gcl ]
     then mkdir /var/tmp/gcl
 fi
-/home/alex/Cs/Swarm/ble/gdp/gdpd/gdpd &
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+$DIR/gdp/apps/gdp-rest &
 echo 'GDP server started'
