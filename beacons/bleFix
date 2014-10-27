@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if [[ $1 != "" ]]
-    hciconfig $1 down
-    hciconfig $1 up
-else
-    hciconfig hci0 down
-    hciconfig hci0 up
