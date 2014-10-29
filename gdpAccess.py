@@ -7,7 +7,7 @@ import json
 from subprocess import call
 
 class GCL:
-    baseURI = "http://localhost:8008/gdp/v1/gcl"
+    baseURI = "http://gdp-01.eecs.berkeley.edu:8080/gdp/v1/gcl"
     gdpPath = ""
     gcl_name = ""
 

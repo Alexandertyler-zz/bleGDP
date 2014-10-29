@@ -91,7 +91,7 @@ class SensorTag:
         while True:
             #print "Notification Loop"
             try:
-              pnum = self.con.expect('Notification handle = .*? \r', timeout=4)
+              pnum = self.con.expect('Notification handle = .*? \r', timeout=500)
             except pexpect.TIMEOUT:
               print "TIMEOUT exception!"
               break
